@@ -11,7 +11,7 @@
 ROOT_URL = https:/$()/newsapi.org/v2/
 
 // Keys
-API_KEY = ENTER KEY HERE
+API_KEY = ENTER_KEY_HERE
 
 // App Settings
 APP_NAME = News App
