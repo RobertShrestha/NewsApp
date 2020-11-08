@@ -1,0 +1,20 @@
+//
+//  Dev.xcconfig
+//  NewsApp
+//
+//  Created by Robert Shrestha on 11/7/20.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+// Server URL
+ROOT_URL = https:/$()/newsapi.org/v2/
+
+// Keys
+API_KEY = 21915fffb2f44acca29e688a36c6bb0b
+
+// App Settings
+APP_NAME = News App
+APP_BUNDLE_ID = me.robert.newsapp
+APP_ICON = AppIcon
+

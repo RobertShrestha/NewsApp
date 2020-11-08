@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HSb-ou-7T5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Article-->
+        <scene sceneID="R60-Pu-Hpy">
+            <objects>
+                <viewController storyboardIdentifier="ArticleViewController" title="Article" id="HSb-ou-7T5" customClass="ArticleViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Uc-9s-KgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-D2-ifz">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="EQ0-hY-m0e">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="400.5"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2bO-Pm-wGl">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="400.5"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lRF-wX-xom">
+                                                        <rect key="frame" x="5" y="5" width="365" height="390.5"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SSv-Mk-OYM" customClass="LargeBoldLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="0.0" width="365" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="O5k-IF-f81">
+                                                                <rect key="frame" x="0.0" y="39.5" width="365" height="182.5"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" secondItem="O5k-IF-f81" secondAttribute="height" multiplier="2:1" id="m12-hY-mUq"/>
+                                                                </constraints>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3M3-Cu-kpH" customClass="XSmallBoldLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="241.5" width="365" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymK-1r-VNu" customClass="MediumLightLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="281" width="365" height="20.5"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUt-66-dcu" customClass="LinkButton" customModule="NewsApp" customModuleProvider="target">
+                                                                <rect key="frame" x="0.0" y="321" width="365" height="30"/>
+                                                                <state key="normal" title="Continue with article">
+                                                                    <color key="titleColor" systemColor="linkColor"/>
+                                                                </state>
+                                                            </button>
+                                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="bFU-tR-8ON">
+                                                                <rect key="frame" x="0.0" y="370" width="365" height="20.5"/>
+                                                                <subviews>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1hV-Mu-PLZ" customClass="SmallBoldLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="0.0" y="0.0" width="182.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UuR-Wq-M89" customClass="SmallRegularLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                        <rect key="frame" x="182.5" y="0.0" width="182.5" height="20.5"/>
+                                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                        <nil key="textColor"/>
+                                                                        <nil key="highlightedColor"/>
+                                                                    </label>
+                                                                </subviews>
+                                                            </stackView>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="lRF-wX-xom" firstAttribute="leading" secondItem="2bO-Pm-wGl" secondAttribute="leading" constant="5" id="LfO-Xd-ToR"/>
+                                                    <constraint firstItem="lRF-wX-xom" firstAttribute="top" secondItem="2bO-Pm-wGl" secondAttribute="top" constant="5" id="Xvc-rl-oIa"/>
+                                                    <constraint firstAttribute="trailing" secondItem="lRF-wX-xom" secondAttribute="trailing" constant="5" id="spQ-Li-oja"/>
+                                                    <constraint firstAttribute="bottom" secondItem="lRF-wX-xom" secondAttribute="bottom" constant="5" id="yWC-16-1TV"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="EQ0-hY-m0e" secondAttribute="trailing" id="4bV-5h-1Fo"/>
+                                    <constraint firstAttribute="bottom" secondItem="EQ0-hY-m0e" secondAttribute="bottom" id="Crd-fM-Qm8"/>
+                                    <constraint firstItem="EQ0-hY-m0e" firstAttribute="top" secondItem="Rek-D2-ifz" secondAttribute="top" id="Iua-ae-ds5"/>
+                                    <constraint firstItem="EQ0-hY-m0e" firstAttribute="leading" secondItem="Rek-D2-ifz" secondAttribute="leading" id="TZf-YH-6EP"/>
+                                    <constraint firstItem="EQ0-hY-m0e" firstAttribute="width" secondItem="Rek-D2-ifz" secondAttribute="width" id="gnd-Lm-S1i"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="jmJ-sM-EkB"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="2Vz-rh-LBv"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="Rek-D2-ifz" secondAttribute="bottom" id="5JW-1G-Yak"/>
+                            <constraint firstItem="Rek-D2-ifz" firstAttribute="top" secondItem="y1H-iV-BwG" secondAttribute="bottom" id="KJi-CV-mVE"/>
+                            <constraint firstAttribute="trailing" secondItem="Rek-D2-ifz" secondAttribute="trailing" id="KSj-wz-NFs"/>
+                            <constraint firstItem="Rek-D2-ifz" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="tM9-V7-MrM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="articleAuthorLabel" destination="3M3-Cu-kpH" id="Ifw-29-CXV"/>
+                        <outlet property="articleContentLabel" destination="ymK-1r-VNu" id="1Sy-sV-Nbd"/>
+                        <outlet property="articleImageView" destination="O5k-IF-f81" id="qVz-Ir-Mvu"/>
+                        <outlet property="articleSourceLabel" destination="1hV-Mu-PLZ" id="A4J-C8-Yfk"/>
+                        <outlet property="articleTimeLabel" destination="UuR-Wq-M89" id="m4M-pe-KEG"/>
+                        <outlet property="articleTitleLabel" destination="SSv-Mk-OYM" id="Aqb-CV-aAh"/>
+                        <outlet property="continueButton" destination="PUt-66-dcu" id="Ofh-oB-AWg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="232.53373313343329"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="1hV-Mu-PLZ">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="3M3-Cu-kpH">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="PUt-66-dcu">
+            <size key="intrinsicContentSize" width="142" height="30"/>
+        </designable>
+        <designable name="SSv-Mk-OYM">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="UuR-Wq-M89">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="ymK-1r-VNu">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+    <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <systemColor name="linkColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

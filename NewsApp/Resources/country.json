@@ -1,0 +1,107 @@
+[
+{
+    "name": "UAE",
+    "dial_code": "+971",
+    "code": "AE"
+  }, 
+  {
+    "name": "Argentina",
+    "dial_code": "+54",
+    "code": "AR"
+  },
+  {
+    "name": "Austria",
+    "dial_code": "+43",
+    "code": "AT"
+  },
+  {
+    "name": "Australia",
+    "dial_code": "+61",
+    "code": "AU"
+  },
+  {
+    "name": "Belgium",
+    "dial_code": "+32",
+    "code": "BE"
+  },
+  {
+    "name": "Bulgaria",
+    "dial_code": "+359",
+    "code": "BG"
+  },
+  {
+    "name": "Brazil",
+    "dial_code": "+55",
+    "code": "BR"
+  },
+  {
+    "name": "Canada",
+    "dial_code": "+1",
+    "code": "CA"
+  },
+  {
+    "name": "China",
+    "dial_code": "+86",
+    "code": "CN"
+  },
+  {
+    "name": "France",
+    "dial_code": "+33",
+    "code": "FR"
+  },
+  {
+    "name": "UK",
+    "dial_code": "+44",
+    "code": "GB"
+  },
+   {
+    "name": "Germany",
+    "dial_code": "+49",
+    "code": "DE"
+  },
+  {
+    "name": "Italy",
+    "dial_code": "+39",
+    "code": "IT"
+  },
+  {
+    "name": "Japan",
+    "dial_code": "+81",
+    "code": "JP"
+  },
+   {
+    "name": "USA",
+    "dial_code": "+1",
+    "code": "US"
+  },
+  {
+    "name": "Taiwan",
+    "dial_code": "+886",
+    "code": "TW"
+  },
+  {
+    "name": "Singapore",
+    "dial_code": "+65",
+    "code": "SG"
+  },
+  {
+    "name": "Russia",
+    "dial_code": "+7",
+    "code": "RU"
+  },
+  {
+    "name": "Portugal",
+    "dial_code": "+351",
+    "code": "PT"
+  },
+   {
+    "name": "Hong Kong",
+    "dial_code": "+852",
+    "code": "HK"
+  },
+  {
+    "name": "India",
+    "dial_code": "+91",
+    "code": "IN"
+  }
+]

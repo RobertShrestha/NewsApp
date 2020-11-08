@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HSb-ou-7T5">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SearchEverything-->
+        <scene sceneID="R60-Pu-Hpy">
+            <objects>
+                <viewController storyboardIdentifier="SearchEverythingViewController" title="SearchEverything" id="HSb-ou-7T5" customClass="SearchEverythingViewController" customModule="NewsApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Uc-9s-KgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="sn1-O7-qYS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <searchBar key="tableHeaderView" contentMode="redraw" placeholder="Enter Keyword" id="2jT-E1-VHG">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                    <textInputTraits key="textInputTraits"/>
+                                </searchBar>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="HeadlineTableViewCell" rowHeight="423" id="gyH-7X-cUJ" customClass="HeadlineTableViewCell" customModule="NewsApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="72" width="375" height="423"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gyH-7X-cUJ" id="JBz-Q7-bwQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="423"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="idm-KV-7az">
+                                                    <rect key="frame" x="10" y="10" width="355" height="403"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="VCf-qs-Yz7">
+                                                            <rect key="frame" x="0.0" y="0.0" width="355" height="403"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zH8-ag-Czv">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="177.5"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" secondItem="zH8-ag-Czv" secondAttribute="height" multiplier="2:1" id="bXE-kB-X85"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="awH-7B-dQS" customClass="LargeBoldLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="232" width="355" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fA-Lv-zQm" customClass="MediumLightLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                    <rect key="frame" x="0.0" y="307.5" width="355" height="20.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="3gt-nM-N3k">
+                                                                    <rect key="frame" x="0.0" y="382.5" width="355" height="20.5"/>
+                                                                    <subviews>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iXd-oV-PXr" customClass="SmallBoldLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                            <rect key="frame" x="0.0" y="0.0" width="177.5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fQ-fn-cbg" customClass="SmallRegularLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                            <rect key="frame" x="177.5" y="0.0" width="177.5" height="20.5"/>
+                                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                            <nil key="textColor"/>
+                                                                            <nil key="highlightedColor"/>
+                                                                        </label>
+                                                                    </subviews>
+                                                                </stackView>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="VCf-qs-Yz7" firstAttribute="leading" secondItem="idm-KV-7az" secondAttribute="leading" id="COn-hY-ljZ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="VCf-qs-Yz7" secondAttribute="trailing" id="VX0-4X-yPK"/>
+                                                        <constraint firstAttribute="bottom" secondItem="VCf-qs-Yz7" secondAttribute="bottom" id="cYq-KK-oyF"/>
+                                                        <constraint firstItem="VCf-qs-Yz7" firstAttribute="top" secondItem="idm-KV-7az" secondAttribute="top" id="pH1-Jz-bjT"/>
+                                                    </constraints>
+                                                </view>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nm5-1J-b0C" customClass="CircularCorneredView" customModule="NewsApp" customModuleProvider="target">
+                                                    <rect key="frame" x="229" y="20" width="126" height="30"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="HDl-zg-lhP">
+                                                            <rect key="frame" x="10" y="5" width="106" height="20"/>
+                                                            <subviews>
+                                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AuthorIcon" translatesAutoresizingMaskIntoConstraints="NO" id="CXA-rR-iut">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="12" height="20"/>
+                                                                    <constraints>
+                                                                        <constraint firstAttribute="width" constant="12" id="ddZ-1u-sLW"/>
+                                                                        <constraint firstAttribute="height" constant="20" id="gmd-ln-wwg"/>
+                                                                    </constraints>
+                                                                </imageView>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="a41-MF-kcR" customClass="SmallRegularLabel" customModule="NewsApp" customModuleProvider="target">
+                                                                    <rect key="frame" x="12" y="0.0" width="94" height="20"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="trailing" secondItem="HDl-zg-lhP" secondAttribute="trailing" constant="10" id="a2c-qS-uSe"/>
+                                                        <constraint firstItem="HDl-zg-lhP" firstAttribute="top" secondItem="nm5-1J-b0C" secondAttribute="top" constant="5" id="mOH-Fe-Ymb"/>
+                                                        <constraint firstItem="HDl-zg-lhP" firstAttribute="leading" secondItem="nm5-1J-b0C" secondAttribute="leading" constant="10" id="vOw-dg-vvK"/>
+                                                        <constraint firstAttribute="height" constant="30" id="yrL-6Q-amm"/>
+                                                        <constraint firstAttribute="bottom" secondItem="HDl-zg-lhP" secondAttribute="bottom" constant="5" id="zBQ-ZO-Ajo"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="idm-KV-7az" firstAttribute="leading" secondItem="JBz-Q7-bwQ" secondAttribute="leading" constant="10" id="8Kp-Oc-VFQ"/>
+                                                <constraint firstItem="idm-KV-7az" firstAttribute="top" secondItem="nm5-1J-b0C" secondAttribute="bottom" constant="-40" id="Fj4-Ro-cpg"/>
+                                                <constraint firstItem="idm-KV-7az" firstAttribute="top" secondItem="JBz-Q7-bwQ" secondAttribute="top" constant="10" id="Nho-6g-b84"/>
+                                                <constraint firstAttribute="trailing" secondItem="idm-KV-7az" secondAttribute="trailing" constant="10" id="OjI-5O-qZH"/>
+                                                <constraint firstAttribute="trailing" secondItem="nm5-1J-b0C" secondAttribute="trailing" constant="20" id="q7x-q3-a7h"/>
+                                                <constraint firstAttribute="bottom" secondItem="idm-KV-7az" secondAttribute="bottom" constant="10" id="xfW-Za-1Im"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="articleAuthorLabel" destination="a41-MF-kcR" id="kLH-me-QbR"/>
+                                            <outlet property="articleDescriptionLabel" destination="8fA-Lv-zQm" id="gSX-nL-xdA"/>
+                                            <outlet property="articleImageView" destination="zH8-ag-Czv" id="nhv-xe-9nq"/>
+                                            <outlet property="articleSourceLabel" destination="iXd-oV-PXr" id="v4d-Tc-doq"/>
+                                            <outlet property="articleTimeLabel" destination="0fQ-fn-cbg" id="E5o-9A-Aes"/>
+                                            <outlet property="articleTitleLabel" destination="awH-7B-dQS" id="Lxe-Os-A8T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="sn1-O7-qYS" secondAttribute="bottom" id="0jw-uu-PeO"/>
+                            <constraint firstItem="sn1-O7-qYS" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="qad-io-FCh"/>
+                            <constraint firstAttribute="trailing" secondItem="sn1-O7-qYS" secondAttribute="trailing" id="qgI-F4-7WJ"/>
+                            <constraint firstItem="sn1-O7-qYS" firstAttribute="top" secondItem="y1H-iV-BwG" secondAttribute="bottom" id="wE8-yX-DER"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="searchBar" destination="2jT-E1-VHG" id="J7H-gJ-EW8"/>
+                        <outlet property="tableView" destination="sn1-O7-qYS" id="dDD-8V-RgM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-91" y="233"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="0fQ-fn-cbg">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="8fA-Lv-zQm">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="a41-MF-kcR">
+            <size key="intrinsicContentSize" width="36" height="20.5"/>
+        </designable>
+        <designable name="awH-7B-dQS">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+        <designable name="iXd-oV-PXr">
+            <size key="intrinsicContentSize" width="41.5" height="20.5"/>
+        </designable>
+    </designables>
+    <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+    <resources>
+        <image name="AuthorIcon" width="13.5" height="15"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
