@@ -44,6 +44,7 @@ IOS App using newsapi.org Open APIs
 - [ ] Change filter design from using actionsheet to using UIPageViewController for better UI/UX
 - [ ] Implement BDD if possible
 - [ ] Learn and implement RxTest
+- [ ] Implement RxFlow for navigation
 ### In Progress
 - [ ] Remove article from favourites 
 
