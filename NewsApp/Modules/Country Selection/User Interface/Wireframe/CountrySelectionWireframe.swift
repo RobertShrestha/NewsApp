@@ -50,6 +50,7 @@ extension CountrySelectionWireframe: CountrySelectionWireframeInput {
             log.error("Invalid View Protocol type")
             fatalError("Invalid View Protocol type")
         }
+        viewVC.navigationController?.setNavigationBarHidden(true, animated: true)
         MainTabWireframe().pushMainView(in: viewVC.navigationController!)
     }
 }
