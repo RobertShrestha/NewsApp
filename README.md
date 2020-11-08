@@ -27,7 +27,6 @@ IOS App using newsapi.org Open APIs
 - [MBProgressHUD](https://github.com/jdg/MBProgressHUD) MBProgressHUD is an iOS drop-in class that displays a translucent HUD with an indicator and/or labels while work is being done in a background thread. 
 - [RxAlamofire](https://github.com/RxSwiftCommunity/RxAlamofire) RxAlamofire is a RxSwift wrapper around the elegant HTTP networking in Swift Alamofire.
 - [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) Colorful, flexible, lightweight logging for Swift 3, Swift 4 & Swift 5.
-- [SwiftyBeaver](https://github.com/SwiftyBeaver/SwiftyBeaver) Colorful, flexible, lightweight logging for Swift 3, Swift 4 & Swift 5.
 
 ### Todo
 
@@ -57,3 +56,8 @@ IOS App using newsapi.org Open APIs
 - [x] Favourites
 - [x] Change country
 - [x] Save favourited articles to UserDefaults
+
+
+### Any comments or feedback for improvement of codebase is highly appreciated.
+ 
+### Happy Coding
