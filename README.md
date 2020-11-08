@@ -54,6 +54,7 @@ IOS App using newsapi.org Open APIs
 - [x] Search
 - [x] Article View
   - [x] Share feature Implement
+  - [x] Save feature Implement
 - [x] Favourites
 - [x] Change country
 - [x] Save favourited articles to UserDefaults
