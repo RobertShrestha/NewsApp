@@ -43,3 +43,21 @@ struct UserDefaultStorage: Storage {
 
 
 }
+
+struct StorageClient {
+    var storage: Storage
+
+    init(storage: Storage) {
+        self.storage = storage
+    }
+
+    func loadArticles() -> [Article] {
+        return storage.load()
+    }
+    mutating func addArticle(with article: Article) {
+        return storage.save(article: article)
+    }
+    mutating func removeArticle(with article: Article) {
+        return storage.remove(article: article)
+    }
+}

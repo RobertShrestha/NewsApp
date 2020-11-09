@@ -10,7 +10,7 @@ import Foundation
 import RxCocoa
 import RxSwift
 class ArticlePresenter {
-    var storage: Storage?
+    var storageClient = StorageClient(storage: UserDefaultStorage(articles: []))
 	// MARK: Properties
     weak var view: ArticleViewInterface?
     var interactor: ArticleInteractorInput?
@@ -26,7 +26,7 @@ class ArticlePresenter {
         self.selectedArticle = article
         self.article.accept(selectedArticle)
         subscribedEvents()
-        storage = UserDefaultStorage(articles: [])
+//        storage = UserDefaultStorage(articles: [])
     }
 }
 
@@ -49,7 +49,7 @@ extension ArticlePresenter: ArticleModuleInterface {
         self.saveButtonTapped
             .asObserver()
             .subscribe(onNext: { [self] in
-                self.storage?.save(article: selectedArticle)
+                self.storageClient.addArticle(with: selectedArticle)
             }).disposed(by: disposeBag)
     }
     private func toBrowser() {

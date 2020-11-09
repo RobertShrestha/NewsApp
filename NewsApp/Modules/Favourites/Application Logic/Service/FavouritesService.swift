@@ -11,15 +11,11 @@ import Foundation
 class FavouritesService: FavouritesServiceType {
 
     // MARK: Properties
-    var storage: Storage?
+    var storageClient = StorageClient(storage: UserDefaultStorage(articles: []))
     // MARK: Initialization
 
     // MARK: Data management
-    init() {
-        self.storage = UserDefaultStorage(articles: [])
-    }
-
     func getSavedArticles() -> [Article] {
-        return self.storage?.load() ?? []
+        return self.storageClient.loadArticles()
     }
 }
